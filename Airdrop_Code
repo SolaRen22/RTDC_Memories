@@ -1466,19 +1466,6 @@ contract KIP17Kbirdz is KIP17, KIP17Enumerable, KIP17Metadata, MinterRole {
     }
 
     
-    // struct Addressmake{
-
-    //     address name;
-
-
-    // }
-
-    // Addressmake[] Addressmaker;
-
-    // function setEmp(address _name) public {
-    //     // 솔리디티 배열은 push 를 이용하여 배열에 값을 입력 한다.
-    //     Addressmaker.push(Addressmake(_name));
-    // }
 
 
     event Addressname(uint indexed _index , address _address);
@@ -1501,17 +1488,7 @@ contract KIP17Kbirdz is KIP17, KIP17Enumerable, KIP17Metadata, MinterRole {
     }
 
     }
-    //}
-
-    //     function airDropMint(address user, uint256 requestedCount) external onlyMinter { // 여기서 매개변수로 들어온 주소와 숫자는 하나도 안쓸거지만 아래 require 함수 때문에 transact 버튼 누를 때 requestedCount는 1 넣어줘야함
-    //         require(requestedCount > 0, "zero request");
-    //         walletAddress = ["0x25c29bd81e296D8a3C4e6e852C24d35457422Bd2","0x1335B0D16B9A08fD3D63FA8D69b6aBEE1f8767aa"] // 여기 문자열 배열 또는 address 타입의 배열 선언해서 지갑 주소 다 넣어버리기 또는 엑셀 파일이 있으니 지갑 주소를 배열에 넣는 작업도 자동화 시켜버리기
-    //         for(uint256 i = 0; i < 230; i++) { // 배열 크기 = 지갑 개수만큼 포문 돌릴건데 walletAddress.size()가 함수로 없을 수 있으니 그냥 하드코딩으로 숫자 230이렇게 넣어줘도댐
-    //             //_mint(user, _mintIndexForSale); //원본 함수 남겨놓았는데 이게 무슨 의미인지 모르겠네 _mintIndexForSale이 지역변수가 아니고 전역변수같은데 이걸 이해하려면 _mint라는 함수 내부도 뜯어봐야겠다 간단하게 봐서는 그거같음 001 002 이런거
-    //             _mint(walletAddress[i], _mintIndexForSale); // _mintIndexForSale이 1로 설정되어있을 거같아 이때 민트가 001부터 되는듯 
-    //             _mintIndexForSale = _mintIndexForSale.add(1); //그다음 _mintIndexForSale에 1 더해줘서 2만드는 과정인듯? 
-    //   }
-    // }
+    
 
 
 
